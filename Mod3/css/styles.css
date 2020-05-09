@@ -40,6 +40,7 @@ h1{
 
 .navbar-header button .navbar-toggle {
     border: 3px black;
+    clear: both;
 }
 
 #nav-list {
@@ -59,7 +60,7 @@ li{
 #nav-list a:hover{
     background: yellow;
 }
-@media (max-width :767 px){
+@media (max-width :768 px){
 #collapsable-nav {
     background-color: burlywood;
     background: position z -1;
