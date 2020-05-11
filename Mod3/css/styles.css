@@ -1,110 +1,156 @@
 body {
-
-    background-color:ghostwhite;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  font-size: 16px;
+  color: #fff;
+  background-color: mintcream;
+  font-family: 'Oxygen', sans-serif;
 }
- * {
-     box-sizing: border-box;
- }
+
+/** HEADER **/
 #header-nav {
-    background-color: rgba(132, 132, 138, 0.452);
-    border-radius: 0px;
-    border: 20px;
-    height: 100px;
-    border-color: black;
-    
+  background-color: darkgray;
+  border-radius: 0;
+  border: 0;
 }
 
-.navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
+
+
+.navbar-brand {
+  padding-top: 25px;
 }
 
-h1{
-    text-align: center;
-    font-family:cursive;
-    font-size: 75% larger;
-    color: black;
-    margin-bottom: 10px;
-    margin-top: 0px;
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: .75;
 }
-
-.navbar-header button .navbar-toggle {
-    border: 3px black;
-    clear: both;
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
 #nav-list {
-    margin-top: 5px;
-    
+  margin-top: 10px;
 }
-#nav-list a{
-    font-size: large;
-    font-style: oblique;
-    color: black;
-    text-align: center;
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
 }
 
-li{
-    position: relative;
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 3px black;
 }
-#nav-list a:hover{
-    background: yellow;
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
 }
-@media (max-width :768 px){
-#collapsable-nav {
-    background-color: burlywood;
-    background: position z -1;
+/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
 }
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
 }
- #x{
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
   
-    background-color: rgba(132, 132, 138, 0.452);
-    border:2px solid black;
-    margin: 20px;
-    padding: 0px;
-    
-    
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+}
+#x {
+  
+  background-color: dimgrey;
+  opacity: 0.8;
+  margin: 20px;
+  height: 250px;
+  overflow: scroll;
+  border: 3px black;
 }
 
+p{
+  color: black;
+}
+h1{
+  color: black;
+  font-size: xx-large;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
- p{
-    
-    padding:10px;
-     margin-top: 40px;
-     
-     font-size: 15px;
-     font-family: cursive;
- }
- h3{
-    background-color:#708090;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    float: right;
-    
-    text-align: center;
-    font-size: 50% larger;
-    font-family: cursive;
-    margin-top: 0%;
-    margin-bottom: 5px;
-    
-    
-    
-    }
-     #chicken{
-        background-color: blanchedalmond;
-    }
-    #sushi{
-        background-color: coral;
-    }
+h3{
+  border: 3px black;
+  text-align: center;
+  background-color: coral;
+  width: 100%;
+  color: black;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#sushi{
+  background-color: cornflowerblue;
+}
+
+#chicken{
+  background-color: cornsilk;
+}
